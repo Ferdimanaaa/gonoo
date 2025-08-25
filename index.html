@@ -396,7 +396,7 @@
         /* GIF Section */
         .gif-section {
             padding: 100px 0;
-            background: linear-gradient(0deg, #1a1a1a 0%, #2d2d2d 100%);
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
             text-align: center;
         }
 
@@ -411,12 +411,14 @@
             max-width: 400px;
             height: auto;
             opacity: 0;
-            transition: opacity 0.3s ease-in-out;
+            transition: opacity 0.1s ease-in-out;
             transform: rotate(0deg);
         }
 
         .gif-image.playing {
+            display: block;
             opacity: 1;
+            transform: rotate(0deg) translateY(0);
         }
 
         .goon-btn {
